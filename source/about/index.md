@@ -18,7 +18,7 @@ I had worked for Oracle, Baidu, ByteDance as a software engineer.
 
 
 ## 关于我 ##
-#### 邱文林 ####
+#### 尼克邱 ####
 
 **邮箱**: nicholas.chiu.qiu@qq.com
 **Github**: https://github.com/nqiu
@@ -34,6 +34,6 @@ I had worked for Oracle, Baidu, ByteDance as a software engineer.
 
 ## 写在最后 ##
 本站主要分享个人技术经验，生活点滴等。
-写作水平及技术能力有限，阅历尚浅，如文中有侵权、错误等问题欢迎联系我
+知识水平、技术能力及写作水平有限，阅历尚浅，如文中有侵权、错误等问题欢迎联系我
 
 *声明：本站所有文章仅代表作者本人观点，与所在公司无关！*
