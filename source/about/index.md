@@ -10,7 +10,7 @@ date: 2019-12-27 13:48:06
 
 #### Educational Background ####
 * Beijing University of Posts and Telecommunications(BUPT)
-    * M.E. Computer Technology (2012-2017)
+    * M.E. Computer Technology (2012-2015)
     * B.E. Communication Engineering (2008-2012)
 
 #### Work Experience ####
@@ -26,7 +26,7 @@ I had worked for Oracle, Baidu, ByteDance as a software engineer.
 
 #### 教育背景 ####
 * 北京邮电大(BUPT)
-    * 硕士 计算机技术(2012-2017)
+    * 硕士 计算机技术(2012-2015)
     * 学士 通信工程(2008-2012)
 
 #### 工作经历 ####
