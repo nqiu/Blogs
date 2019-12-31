@@ -65,7 +65,7 @@ Debian$ find / -type d -name "gitlab"
 
 4. 目录简介
 
-* `/var/opt/gitlab是Omnibus package的默认安装位置，也即`git`用户的家目录，它是应用数据和配置的存放位置。`
+* `/var/opt/gitlab`是Omnibus package的默认安装位置，也即`git`用户的家目录，它是应用数据和配置的存放位置。
 * `/etc/gitlab`是配置文件存放位置，主配置文件为`/etc/gitlab/gitlab.rb`，该目录下文件修改后，通过如下两条命令使配置写回`/var/opt/gitlab`并生效，
 
 ```bash
