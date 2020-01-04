@@ -1,5 +1,5 @@
 ---
-title: gitlab-ce trial
+title: gitlab-ce试用
 date: 2019-12-31 17:24:17
 tags:
 ---

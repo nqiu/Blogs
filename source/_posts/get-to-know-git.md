@@ -1,5 +1,5 @@
 ---
-title: get to know git
+title: 初识git
 date: 2020-01-04 22:28:26
 tags:
 ---

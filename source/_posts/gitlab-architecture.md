@@ -1,5 +1,5 @@
 ---
-title: gitlab architecture
+title: gitlab架构
 date: 2020-01-02 16:30:49
 tags:
 ---
