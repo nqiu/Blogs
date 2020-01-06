@@ -66,17 +66,55 @@ Debian$ find / -type d -name "gitlab"
 4. 目录简介
 
 * `/var/opt/gitlab`是Omnibus package的默认安装位置，也即`git`用户的家目录，它是应用数据和配置的存放位置。
-* `/etc/gitlab`是配置文件存放位置，主配置文件为`/etc/gitlab/gitlab.rb`，该目录下文件修改后，通过如下两条命令使配置写回`/var/opt/gitlab`并生效，
+* `/etc/gitlab`是配置文件存放位置，主配置文件为`/etc/gitlab/gitlab.rb`，该目录下文件修改后，通过如下两条命令使配置写回/var/opt/gitlab的相应配置并生效，
 
 ```bash
 Debian$ gitlab-ctl reconfigure
-Debian$ gitlab-ctl restart
+Debian$ gitlab-ctl restart # 使所有服务stop后start
 ```
 
 * `/opt/gitlab`是gitlab代码和依赖的存放目录
 * `/var/log/gitlab`是gitlab及组件的日志目录
 
+## gitlab运维相关
+
+### 配置文件
+
+主配置文件为*/etc/gitlab/gitlab.rb*，该文件几乎包含了gitlab所有服务的配置，配置文件中有详细的配置说明，或文档链接，下面列举一些常见配置项
+
+```bash
+# 访问地址
+external_url 'http://localhost:9876'
+
+# worker数
+unicorn['worker_processes'] = 2
+# 建议为CPU核心数 + 1，不能低于2
+
+# 数据库并发数
+postgresql['max_worker_processes'] = 8
+# 数据库缓存
+postgresql['shared_buffers'] = "256MB"
+
+# sidekiq并发数
+sidekiq['concurrency'] = 25
+
+```
+
+### 运维命令
+
+```bash
+$ gitlab-ctl help
+$ gitlab-ctl status
+$ gitlab-ctl show-config
+$ gitlab-ctl service-list
+$ gitlab-ctl tail
+$ gitlab-ctl reconfigure
+$ gitlab-ctl stop
+$ gitlab-ctl restart
+```
+
 ## 参考
 
 * [gitlab官方文档]("https://about.gitlab.com/install/?version=ce#debian" "giblab安装文档")
+* [gitlab安装要求]("https://docs.gitlab.com/ce/install/requirements.html" "gitlab install requirements")
 
